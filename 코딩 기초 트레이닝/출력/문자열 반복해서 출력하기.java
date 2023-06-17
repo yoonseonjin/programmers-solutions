@@ -6,6 +6,7 @@ class Solution {
         String str = sc.next();
         int n = sc.nextInt();
         System.out.print(str.repeat(n));
+        sc.close();
     }
 }
 
