@@ -4,9 +4,9 @@ class Solution {
     public String[] solution(String[] strArr) {
         ArrayList<String> strList = new ArrayList<String>();
         
-        for (int i = 0; i < strArr.length; i++) {
-            if (!strArr[i].contains("ad")) {
-                strList.add(strArr[i]);
+        for (String str : strArr) {
+            if (!str.contains("ad")) {
+                strList.add(str);
             }
         }
         return strList.toArray(new String[strList.size()]);
