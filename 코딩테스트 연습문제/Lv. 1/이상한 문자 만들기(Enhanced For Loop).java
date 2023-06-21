@@ -1,12 +1,12 @@
 class Solution {
     public String solution(String s) {
         String answer = "";
-        String[] array = s.split("");
+        String[] strArr = s.split("");
         int index = 0;
 
-        for (String ss : array) {
-            index = ss.contains(" ") ? 0 : index + 1;
-            answer += (index % 2 == 0) ? ss.toLowerCase() : ss.toUpperCase(); 
+        for (String str : strArr) {
+            index = str.contains(" ") ? 0 : index + 1;
+            answer += (index % 2 == 0) ? str.toLowerCase() : str.toUpperCase(); 
         }
         return answer;
     }

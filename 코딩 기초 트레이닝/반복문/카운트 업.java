@@ -3,7 +3,7 @@ class Solution {
         int[] answer = new int[end - start + 1];
         
         for (int i = 0; i < answer.length; i++) {
-            answer[i] += start++;
+            answer[i] = start++;
         }
         return answer;
     }
