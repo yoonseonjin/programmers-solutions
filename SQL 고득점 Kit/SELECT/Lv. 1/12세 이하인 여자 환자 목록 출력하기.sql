@@ -1,6 +1,6 @@
 SELECT PT_NAME, 
-       PT_NO, G
-       END_CD, 
+       PT_NO, 
+       GEND_CD, 
        AGE, 
        IFNULL(TLNO, 'NONE') AS TLNO
 FROM PATIENT
