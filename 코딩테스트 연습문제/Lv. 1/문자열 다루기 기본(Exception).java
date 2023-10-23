@@ -4,7 +4,7 @@ class Solution {
             return false;
         }
         try {
-            int isNum = Integer.valueOf(s);
+            int isNum = Integer.parseInt(s);
         } catch (Exception e) {
             return false;
         }

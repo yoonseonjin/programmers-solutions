@@ -1,13 +1,13 @@
 class Solution {
     public boolean solution(int x) {
         String str = String.valueOf(x);
-        String[] arr = str.split("");
+        String[] strArr = str.split("");
         int sum = 0;
-        
-        for (String ss : arr) {
-            sum += Integer.parseInt(ss);
+
+        for (String s : strArr) {
+            sum += Integer.parseInt(s);
         }
-        return (x % sum == 0) ? true : false;
+        return x % sum == 0;
     }
 }
 

@@ -3,7 +3,7 @@ class Solution {
         long answer = 0;
         int min = Math.min(a, b);
         int max = Math.max(a, b);
-        
+
         for (int i = min; i <= max; i++) {
             answer += i;
         }

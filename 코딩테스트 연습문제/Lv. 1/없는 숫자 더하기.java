@@ -2,10 +2,10 @@ class Solution {
     public int solution(int[] numbers) {
         int answer = 0;
         int condition = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9;
-        
-        for (int i = 0; i < numbers.length; i++) {
-            answer += numbers[i];
-        }
+
+		for (int number : numbers) {
+			answer += number;
+		}
         return condition - answer;
     }
 }

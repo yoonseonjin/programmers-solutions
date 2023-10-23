@@ -3,10 +3,9 @@ class Solution {
         int answer = 0;
 
         for (int i = 0; i < absolutes.length; i++) {
-            if (signs[i] == true) {
+            if (signs[i]) {
                 answer += absolutes[i];
-            }
-            if (signs[i] == false) {
+            } else {
                 answer -= absolutes[i];
             }
         }

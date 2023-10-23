@@ -1,7 +1,7 @@
 class Solution {
     public int solution(int num) {
         int count = 0;
-        
+
         while (num != 1) {
             if (num % 2 == 0) {
                 num /= 2;
@@ -11,7 +11,7 @@ class Solution {
                 }
             }
             count++;
-            
+
             if (count == 500) {
                 break;
             }

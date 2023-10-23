@@ -1,21 +1,18 @@
 class Solution {
     public int solution(int n, String control) {
-        String[] array = control.split("");
-        
-        for (int i = 0; i < array.length; i++) {
-            if (array[i].equals("w")) {
-                n++;
-            }
-            if (array[i].equals("s")) {
-                n--;
-            }
-            if (array[i].equals("d")) {
-                n += 10;
-            }
-            if (array[i].equals("a")) {
-                n -= 10;
-            }
-        }
+        String[] strArr = control.split("");
+
+		for (String str : strArr) {
+			if (str.equals("w")) {
+				n++;
+			} else if (str.equals("s")) {
+				n--;
+			} else if (str.equals("d")) {
+				n += 10;
+			} else if (str.equals("a")) {
+				n -= 10;
+			}
+		}
         return n;
     }
 }

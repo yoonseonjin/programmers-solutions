@@ -4,8 +4,7 @@ class Solution {
         String strBa = String.valueOf(b) + String.valueOf(a);
         int ab = Integer.parseInt(strAb);
         int ba = Integer.parseInt(strBa);
-        
-        return ab < ba ? ba : ab;
+        return Math.max(ab, ba);
     }
 }
 

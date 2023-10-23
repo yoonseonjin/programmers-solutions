@@ -3,11 +3,11 @@ class Solution {
         int product = 1;
         int sum = 0;
         int square = 0;
-        
-        for (int i = 0; i < num_list.length; i++) {
-            product *= num_list[i];
-            sum += num_list[i];
-        }
+
+		for (int i : num_list) {
+			product *= i;
+			sum += i;
+		}
         square = sum * sum;
         return (product < square) ? 1 : 0;
     }

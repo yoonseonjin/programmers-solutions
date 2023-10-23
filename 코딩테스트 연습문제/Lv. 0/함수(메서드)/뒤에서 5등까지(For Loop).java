@@ -4,10 +4,8 @@ class Solution {
     public int[] solution(int[] num_list) {
         int[] array = new int[5];
         Arrays.sort(num_list);
-        
-        for (int i = 0; i < 5; i++) {
-            array[i] = num_list[i];
-        }
+
+		System.arraycopy(num_list, 0, array, 0, 5);
         return array;
     }
 }
