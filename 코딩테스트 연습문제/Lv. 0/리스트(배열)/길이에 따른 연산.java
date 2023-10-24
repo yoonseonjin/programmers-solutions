@@ -5,7 +5,8 @@ class Solution {
 		for (int i : num_list) {
 			if (11 <= num_list.length) {
 				answer += i;
-			} else {
+			}
+			if (num_list.length <= 10) {
 				answer *= i;
 			}
 		}

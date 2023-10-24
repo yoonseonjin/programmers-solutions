@@ -7,7 +7,8 @@ class Solution {
 		for (String str : strArr) {
 			if ("P".equals(str)) {
 				p++;
-			} else if ("Y".equals(str)) {
+			}
+			if ("Y".equals(str)) {
 				y++;
 			}
 		}

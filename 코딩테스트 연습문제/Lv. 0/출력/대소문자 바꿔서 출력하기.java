@@ -12,7 +12,8 @@ class Solution {
 
             if (Character.isUpperCase(c)) {
                 answer.append(Character.toLowerCase(c));
-            } else if (Character.isLowerCase(c)) {
+            }
+            if (Character.isLowerCase(c)) {
                 answer.append(Character.toUpperCase(c));
             }
         }

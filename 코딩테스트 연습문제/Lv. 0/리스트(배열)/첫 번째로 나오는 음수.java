@@ -5,7 +5,8 @@ class Solution {
         for (int i = 0; i < num_list.length; i++) {
             if (0 <= num_list[i]) {
                 index++;
-            } else if (num_list[i] < 0) {
+            }
+            if (num_list[i] < 0) {
                 break;
             }
         }

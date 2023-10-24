@@ -5,7 +5,8 @@ class Solution {
         for (int i = 0; i < strArr.length; i++) {
             if (i % 2 == 1) {
                 answer[i] = strArr[i].toUpperCase();
-            } else {
+            }
+            if (i % 2 == 0) {
                 answer[i] = strArr[i].toLowerCase();
             }
         }

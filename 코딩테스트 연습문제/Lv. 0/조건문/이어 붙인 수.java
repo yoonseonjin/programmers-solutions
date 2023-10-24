@@ -6,7 +6,8 @@ class Solution {
 		for (int i : num_list) {
 			if (i % 2 == 0) {
 				even.append(i);
-			} else {
+			} 
+            if (i % 2 == 1) {
 				odd.append(i);
 			}
 		}

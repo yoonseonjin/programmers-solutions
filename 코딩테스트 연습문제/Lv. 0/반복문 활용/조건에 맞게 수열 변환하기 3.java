@@ -5,7 +5,8 @@ class Solution {
         for (int i = 0; i < arr.length; i++) {
             if (k % 2 == 1) {
                 answer[i] = arr[i] * k;
-            } else {
+            }
+            if (k % 2 == 0) {
                 answer[i] = arr[i] + k;
             }
         }

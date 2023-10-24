@@ -5,7 +5,8 @@ class Solution {
         for (String str : order) {
             if (str.contains("americano") || str.contains("anything")) {
                 answer += 4500;
-            } else if (str.contains("cafelatte")) {
+            }
+            if (str.contains("cafelatte")) {
                 answer += 5000;
             }
         }

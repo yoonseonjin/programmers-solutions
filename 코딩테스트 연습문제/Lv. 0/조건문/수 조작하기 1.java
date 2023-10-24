@@ -5,11 +5,14 @@ class Solution {
 		for (String str : strArr) {
 			if (str.equals("w")) {
 				n++;
-			} else if (str.equals("s")) {
+			}
+			if (str.equals("s")) {
 				n--;
-			} else if (str.equals("d")) {
+			}
+			if (str.equals("d")) {
 				n += 10;
-			} else if (str.equals("a")) {
+			}
+			if (str.equals("a")) {
 				n -= 10;
 			}
 		}
